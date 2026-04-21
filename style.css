@@ -1,13 +1,25 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background-color: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
   color: white;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #1e293b;
+  background-color: rgba(30, 41, 59, 0.9);
   padding: 15px 30px;
+  position: sticky;
+  top: 0;
 }
 
 nav {
@@ -16,37 +28,99 @@ nav {
   align-items: center;
 }
 
+.logo {
+  color: #38bdf8;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding: 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
 }
 
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #38bdf8;
 }
 
-.hero button {
-  padding: 10px 20px;
-  border: none;
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #cbd5e1;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  color: #94a3b8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
   background-color: #38bdf8;
   color: black;
+  text-decoration: none;
+  border-radius: 10px;
   font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0ea5e9;
+  transform: scale(1.05);
 }
 
 .section {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background-color: #334155;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f172a;
+  margin-top: 40px;
+  color: #94a3b8;
 }
