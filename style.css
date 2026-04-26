@@ -149,6 +149,74 @@ nav a:hover {
   background-color: #0ea5e9;
 }
 
+.services {
+  padding: 80px 10%;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.services-subtitle {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 35px;
+}
+
+.service-card {
+  background: #111827;
+  padding: 30px 24px;
+  border-radius: 18px;
+  border: 1px solid #334155;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: #38bdf8;
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15);
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+.service-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.services-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.services-btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+
 #contact a {
   color: #38bdf8;
   text-decoration: none;
